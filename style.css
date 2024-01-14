@@ -1,123 +1,77 @@
-body:hover{cursor:alias;}
-*:focus{outline:dotted;}
-body,
-h1,
-h2,
-h3,
-ul,
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0c2340; /* Dark blue background */
+    color: #ffffff; /* White text */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    text-align: center;
+    padding: 20px;
+    background-color: #001f3f; /* Darker blue */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* White shadow */
+}
+
+h1 {
+    color: #66d9ef; /* Light blue for the title */
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    color: #66d9ef; /* Light blue for the label */
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #66d9ef; /* Light blue border */
+    border-radius: 5px;
+    background-color: #001f3f; /* Darker blue background */
+    color: #ffffff; /* White text */
+    width: 80%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #66d9ef; /* Light blue button */
+    color: #001f3f; /* Darker blue text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+input {
+    padding: 10px;
+    border: 1px solid #66d9ef; /* Light blue border */
+    border-radius: 5px;
+    background-color: #001f3f; /* Darker blue background */
+    color: #ffffff; /* White text */
+    width: 80%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    appearance: none; /* Remove spinner buttons */
+    -webkit-appearance: none; /* For older versions of Chrome/Safari */
+}
+
+/* Add a custom arrow icon for modern browsers (optional) */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button:hover {
+    background-color: #004080; /* Slightly darker blue on hover */
+}
+
 p {
-  padding: 0;
-  margin: 0;
+    margin-top: 15px;
+    color: #66d9ef; /* Light blue for the result text */
 }
-
-header {
-  border-top: 6px solid coral;
-  padding-top: 15px;
-  padding-bottom: 20px;
-}
-header h1 {
-  color: #fff;
-  font-family: sans-serif;
-  padding: 15px;
-  display: inline-block;
-}
-.logo {
-  padding-left: 75px;
-  padding-top: 10px;
-}
-.navbar li {
-  display: inline;
-}
-.navbar li a {
-  text-decoration: none;
-  color: #000;
-  font-family: sans-serif;
-  padding: 25px 15px;
-  display: inline-block;
-}
-.navbar {
-  float: right;
-  padding-right: 50px;
-}
-.navbar li button {
-  background-color: coral;
-  padding: 10px;
-  border-radius: 4px;
-  border: 0;
-}
-.bg-orange {
-  width: 80px;
-  height: 3px;
-  background-color: coral;
-  display: inline-block;
-}
-.section1 {
-  background-color: #252420;
-  position: relative;
-}
-.python-picture {
-  float: right;
-  position: absolute;
-  right: 15px;
-}
-.section2 {
-  padding-top: 115px;
-  padding-bottom: 210px;
-}
-.section2 h1 {
-  font-weight: bold;
-}
-.section2 img {
-  background-color: bisque;
-  border-radius: 360px;
-  padding: 20px;
-}
-.section1 img {
-  border-radius: 10px;
-  filter:drop-shadow(24px 24px 10px rgba(255, 117, 0, 0.6));
-}
-.section2 .row {
-  justify-content: left;
-}
-.bg-darker {
-  background-color: #252420;
-  border-radius: 10px;
-  padding: 25px;
-}
-.section3 {
-  position: relative;
-  margin-bottom: 160px;
-}
-.section3 img {
-  position: absolute;
-  top: -150px;
-}
-.orange-overlay {
-  color: coral;
-}
-.f-head{display:flex;
-justify-content: space-between;}
-.f-head ul{display: flex;}
-.f-head img{
- padding-top:74px;
-  padding-right: 10px;
-}
-footer{background: rgb(233, 232, 232);
-  width:100%
-}
-.f-body li{width: 324px;
-height:19px;
-padding-left: 34px;
-padding-right: 34px;
-padding-top: 16px;
-padding-bottom: 16px;
-list-style: none;
-
-}
-.f-body ul{
-  justify-content: left;
-  font-size: 16px;
-  padding-top:35px;
-  padding-bottom: 15px;
-}
-.f-body{display: flex;}
